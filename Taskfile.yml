@@ -1,0 +1,17 @@
+version: '3'
+
+tasks:
+  npm_up:
+    desc: install npm dependencies
+    cmds:
+      - npm ci # install dependencies
+      - npm start # start server on port 8080
+      - npx cypress open # for headed interactive mode
+
+
+#  up:
+#    dir: '{{.USER_WORKING_DIR}}'
+#    preconditions:
+#      - test -f docker-compose.yml
+#    cmds:
+#      - docker-compose up -d
