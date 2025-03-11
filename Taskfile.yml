@@ -5,6 +5,7 @@ tasks:
     desc: install npm dependencies
     cmds:
       - npm ci # install dependencies
+      - npm audit fix
       - npm start # start server on port 8080
       - npx cypress open # for headed interactive mode
 
